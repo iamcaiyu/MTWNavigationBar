@@ -108,4 +108,10 @@
     self.image=backgroundImage;
 }
 
+- (void)setShowShadow:(BOOL)showShadow
+{
+    _showShadow=showShadow;
+    [self.layer setShadowOpacity:0];
+}
+
 @end

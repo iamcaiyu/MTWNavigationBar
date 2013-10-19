@@ -13,5 +13,6 @@
 @property (strong, nonatomic) NSString *text;
 @property (strong, nonatomic) UIColor *textColor;
 @property (strong, nonatomic) UIImage *backgroundImage;
+@property (nonatomic) BOOL showShadow;
 
 @end
