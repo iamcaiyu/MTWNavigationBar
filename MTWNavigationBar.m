@@ -111,7 +111,12 @@
 - (void)setShowShadow:(BOOL)showShadow
 {
     _showShadow=showShadow;
-    [self.layer setShadowOpacity:0];
+    if (showShadow) {
+        [self.layer setShadowOpacity:1];
+    } else {
+        [self.layer setShadowOpacity:0];
+    }
+    
 }
 
 @end
